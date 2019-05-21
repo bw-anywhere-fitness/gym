@@ -56,7 +56,7 @@ body {
 }
 @media (max-width: 500px) {
   .secondaryHeading {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 .fas {
@@ -125,7 +125,7 @@ body {
 }
 @media (max-width: 800px) {
   .heading {
-    padding-top: 1rem;
+    padding-top: 4rem;
   }
 }
 @media (max-width: 500px) {
@@ -202,6 +202,11 @@ body {
     height: 50rem;
   }
 }
+@media (max-width: 500px) {
+  #places {
+    height: 30rem;
+  }
+}
 .places__secondary {
   opacity: 0.7;
   padding-top: 16rem;
@@ -224,6 +229,13 @@ body {
     font-size: 2.6rem;
   }
 }
+@media (max-width: 500px) {
+  .places__paragraph {
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-left: 3rem;
+  }
+}
 .update {
   list-style: none;
   margin-top: 12rem;
@@ -235,6 +247,12 @@ body {
 @media (max-width: 800px) {
   .update {
     margin-top: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .update {
+    margin-top: 0;
+    top: 70%;
   }
 }
 .update__item {
@@ -249,12 +267,23 @@ body {
     font-size: 1.7rem;
   }
 }
+@media (max-width: 500px) {
+  .update__item {
+    font-size: 1rem;
+    line-height: none;
+  }
+}
 .learn {
   background-image: url("../images/geert-pieters-688278-unsplash.jpg");
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
 }
 @media (max-width: 800px) {
+  .learn {
+    height: 50vh;
+  }
+}
+@media (max-width: 500px) {
   .learn {
     height: 50vh;
   }
@@ -285,6 +314,11 @@ body {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 500px) {
+  .contact__secondary {
+    font-size: 2.5rem;
+  }
+}
 .contact__paragraph {
   font-size: 2.8rem;
   color: white;
@@ -297,6 +331,12 @@ body {
     font-size: 1.7rem;
   }
 }
+@media (max-width: 500px) {
+  .contact__paragraph {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
 .contact__btn {
   position: absolute;
   top: 75%;
@@ -306,6 +346,11 @@ body {
 @media (max-width: 800px) {
   .contact__btn {
     top: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .contact__btn {
+    font-size: 1rem;
   }
 }
 #employers {
@@ -327,12 +372,30 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .employee {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .employee {
+    justify-content: none;
+  }
+}
 .employee__name-1 {
   width: 13%;
   margin-right: 6rem;
   text-align: center;
   margin-top: 3rem;
   height: 15%;
+}
+@media (max-width: 500px) {
+  .employee__name-1 {
+    justify-content: space-around;
+    width: 10%;
+    margin-right: none;
+    height: 3%;
+  }
 }
 .employee__img {
   width: 100%;
@@ -349,6 +412,11 @@ body {
     font-size: 1.7rem;
   }
 }
+@media (max-width: 500px) {
+  .employee__names {
+    font-size: 1rem;
+  }
+}
 .footer {
   background: #1D2226;
 }
@@ -361,6 +429,12 @@ body {
   color: #535658;
   font-size: 1.9rem;
   padding: 3rem 0;
+}
+@media (max-width: 500px) {
+  .items__list {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
 }
 .header {
   background-image: linear-gradient(to bottom right, var(--color-secondary), var(--color-primary-light));
@@ -409,7 +483,7 @@ body {
 }
 @media (max-width: 500px) {
   .header__list-item {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-left: 1rem;
   }
 }
