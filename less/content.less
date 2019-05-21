@@ -10,6 +10,10 @@
     @media @tablet {
       height: 40rem;
     }
+
+    @media @mobile {
+      height: 30rem;
+    }
   }
 
   &__secondaryHeading {
@@ -32,7 +36,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-
+    @media @mobile {
+      top: 70%;
+    }
 
 
 
@@ -43,8 +49,7 @@
 
 #classes {
   position: relative;
-  padding-bottom: 100rem;
-  height: 90rem;
+  padding-bottom: 15rem;
 
 
   @media @tablet {
@@ -59,6 +64,10 @@
 
   @media @tablet {
     padding-top: 1rem;
+  }
+
+  @media @mobile {
+    padding-top: 2rem;
   }
 
 
@@ -76,16 +85,20 @@
 
   }
 
+  @media @mobile {
+    margin-top: .5rem;
+
+  }
+
   &__item-1 {
-    width: 30%;
+    width: 40%;
     height: 30rem;
     padding-top: 3rem;
     position: relative;
 
-    // @media @tablet {
-    //   height: 10rem;
-    // }
-
+    @media @mobile {
+      height: 15rem;
+    }
   }
 
 
@@ -119,6 +132,13 @@
 
 
 
+    @media @mobile {
+      font-size: 1rem;
+      padding: .1rem;
+    }
+
+
+
 
   }
 }
@@ -128,13 +148,13 @@
 #places {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/scott-webb-22437-unsplash.jpg');
   height: 80rem;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
 
   @media @tablet {
     height: 50rem;
-    margin-top: -17rem;
+
   }
 
 }
@@ -285,7 +305,14 @@
 #employers {
   background-image: linear-gradient(to top right, var(--color-secondary-light), var(--color-primary-dark));
   padding: 10rem 0;
+
+  @media @tablet {
+    padding: 3rem 0;
+  }
+
 }
+
+
 
 .secondary {
   text-align: center;
@@ -300,10 +327,13 @@
 
 
   &__name-1 {
-    width: 30rem;
+    width: 13%;
     margin-right: 6rem;
     text-align: center;
     margin-top: 3rem;
+    height: 15%;
+
+
 
 
   }
@@ -311,11 +341,11 @@
 
 
   &__img {
-    width: 30rem;
-    height: 30rem;
+    width: 100%;
     background-size: cover;
     object-fit: cover;
     border-radius: 50%;
+
 
 
 
@@ -324,6 +354,11 @@
   &__names {
     font-size: 2.8rem;
     margin-top: 2rem;
+
+    @media @tablet {
+      font-size: @tablet-font;
+    }
+
   }
 }
 

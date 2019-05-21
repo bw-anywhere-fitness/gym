@@ -3,6 +3,13 @@
   padding: 2rem 0;
 
 
+  @media @mobile {
+    padding: 1rem;
+
+  }
+
+
+
   &__logo {
     flex: 2;
 
@@ -15,7 +22,6 @@
 
   &__nav {
     display: flex;
-
     align-items: center;
 
   }
@@ -26,6 +32,10 @@
 
     @media @tablet {
       font-size: @tablet-secondary-heading;
+    }
+
+    @media @mobile {
+      font-size: 1.8rem;
     }
 
   }
@@ -40,6 +50,13 @@
     @media @tablet {
       font-size: @tablet-font;
     }
+
+    @media @mobile {
+      font-size: @mobile-font;
+      padding-left: 1rem;
+
+    }
+
 
   }
 

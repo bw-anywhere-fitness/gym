@@ -54,6 +54,11 @@ body {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 500px) {
+  .secondaryHeading {
+    font-size: 1.3rem;
+  }
+}
 .fas {
   padding-right: 2rem;
   color: #fff;
@@ -76,6 +81,11 @@ body {
     height: 40rem;
   }
 }
+@media (max-width: 500px) {
+  .top-content__first {
+    height: 30rem;
+  }
+}
 .top-content__secondaryHeading {
   position: absolute;
   top: 45%;
@@ -95,10 +105,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 500px) {
+  .top-content__btn {
+    top: 70%;
+  }
+}
 #classes {
   position: relative;
-  padding-bottom: 100rem;
-  height: 90rem;
+  padding-bottom: 15rem;
 }
 @media (max-width: 800px) {
   #classes {
@@ -114,6 +128,11 @@ body {
     padding-top: 1rem;
   }
 }
+@media (max-width: 500px) {
+  .heading {
+    padding-top: 2rem;
+  }
+}
 .class {
   display: flex;
   flex-wrap: wrap;
@@ -126,11 +145,21 @@ body {
     margin-top: 1rem;
   }
 }
+@media (max-width: 500px) {
+  .class {
+    margin-top: 0.5rem;
+  }
+}
 .class__item-1 {
-  width: 30%;
+  width: 40%;
   height: 30rem;
   padding-top: 3rem;
   position: relative;
+}
+@media (max-width: 500px) {
+  .class__item-1 {
+    height: 15rem;
+  }
 }
 .class__img {
   background-size: cover;
@@ -155,17 +184,22 @@ body {
     padding: 0.3rem;
   }
 }
+@media (max-width: 500px) {
+  .class__item-title {
+    font-size: 1rem;
+    padding: 0.1rem;
+  }
+}
 #places {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/scott-webb-22437-unsplash.jpg');
   height: 80rem;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
 }
 @media (max-width: 800px) {
   #places {
     height: 50rem;
-    margin-top: -17rem;
   }
 }
 .places__secondary {
@@ -278,6 +312,11 @@ body {
   background-image: linear-gradient(to top right, var(--color-secondary-light), var(--color-primary-dark));
   padding: 10rem 0;
 }
+@media (max-width: 800px) {
+  #employers {
+    padding: 3rem 0;
+  }
+}
 .secondary {
   text-align: center;
 }
@@ -289,14 +328,14 @@ body {
   align-items: center;
 }
 .employee__name-1 {
-  width: 30rem;
+  width: 13%;
   margin-right: 6rem;
   text-align: center;
   margin-top: 3rem;
+  height: 15%;
 }
 .employee__img {
-  width: 30rem;
-  height: 30rem;
+  width: 100%;
   background-size: cover;
   object-fit: cover;
   border-radius: 50%;
@@ -304,6 +343,11 @@ body {
 .employee__names {
   font-size: 2.8rem;
   margin-top: 2rem;
+}
+@media (max-width: 800px) {
+  .employee__names {
+    font-size: 1.7rem;
+  }
 }
 .footer {
   background: #1D2226;
@@ -321,6 +365,11 @@ body {
 .header {
   background-image: linear-gradient(to bottom right, var(--color-secondary), var(--color-primary-light));
   padding: 2rem 0;
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 1rem;
+  }
 }
 .header__logo {
   flex: 2;
@@ -342,6 +391,11 @@ body {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 500px) {
+  .header__heading {
+    font-size: 1.8rem;
+  }
+}
 .header__list-item {
   padding-left: 6rem;
   text-decoration: none;
@@ -351,5 +405,11 @@ body {
 @media (max-width: 800px) {
   .header__list-item {
     font-size: 1.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .header__list-item {
+    font-size: 1.2rem;
+    padding-left: 1rem;
   }
 }
