@@ -1,0 +1,95 @@
+.top-content {
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+}
+.top-content__first {
+  height: 90rem;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.top-content__secondaryHeading {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6.2rem;
+}
+.top-content__btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#classes {
+  position: relative;
+  padding-bottom: 100rem;
+  height: 90rem;
+}
+.heading {
+  text-align: center;
+  padding-top: 10rem;
+}
+.class {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+.class__item-1 {
+  width: 30%;
+  height: 30rem;
+  padding-top: 3rem;
+  position: relative;
+}
+.class__img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.class__item-title {
+  background-color: rgba(0, 0, 0, 0.568);
+  padding: 1rem;
+  bottom: -1rem;
+  position: absolute;
+  width: 20rem;
+  left: 1rem;
+  color: var(--color-secondary-light);
+  font-size: 2.1rem;
+}
+#places {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/scott-webb-22437-unsplash.jpg');
+  height: 80rem;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+}
+.places__secondary {
+  opacity: 0.7;
+  padding-top: 16rem;
+  text-align: center;
+}
+.places__paragraph {
+  color: var(--color-secondary);
+  font-size: 3.6rem;
+  padding-top: 8rem;
+  opacity: 0.7;
+  text-align: center;
+}
+.update {
+  list-style: none;
+  margin-top: 12rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.update__item {
+  color: var(--color-secondary);
+  font-size: 2.5rem;
+  opacity: 0.7;
+  line-height: 1.8;
+  margin-left: 2rem;
+}
