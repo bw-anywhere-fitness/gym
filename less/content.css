@@ -12,7 +12,13 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 6.2rem;
+  font-size: 5.9rem;
+  text-align: center;
+}
+@media tablet {
+  .top-content__secondaryHeading {
+    font-size: 5px;
+  }
 }
 .top-content__btn {
   position: absolute;
@@ -92,6 +98,69 @@
   opacity: 0.7;
   line-height: 1.8;
   margin-left: 2rem;
+}
+.learn {
+  background-image: url("../images/geert-pieters-688278-unsplash.jpg");
+  background-size: cover;
+}
+.contact {
+  background: rgba(0, 0, 0, 0.7);
+  height: 80rem;
+  position: relative;
+}
+.contact__content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact__secondary {
+  font-size: 8.8rem;
+  text-align: center;
+}
+.contact__paragraph {
+  font-size: 2.8rem;
+  color: white;
+  margin-top: 4.5rem;
+  text-align: center;
+  line-height: 1.7;
+}
+.contact__btn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#employers {
+  background-image: linear-gradient(to top right, var(--color-secondary-light), var(--color-primary-dark));
+  padding: 10rem 0;
+}
+.secondary {
+  text-align: center;
+}
+.employee {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.employee__name-1 {
+  width: 30rem;
+  margin-right: 6rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.employee__img {
+  width: 30rem;
+  height: 30rem;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.employee__names {
+  font-size: 2.8rem;
+  margin-top: 2rem;
 }
 .footer {
   background: #1D2226;

@@ -4,19 +4,44 @@
   border-radius: 1rem;
   background-color: var(--color-primary);
   color: var(--color-secondary-light);
+
+  @media @tablet {
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+
+  }
 }
 
 .secondaryHeading {
   color: var(--color-secondary);
   font-size: 5.2rem;
   opacity: 0.8;
+
+  @media @tablet {
+    font-size: @tablet-secondary-heading;
+  }
 }
 
 .fas {
   padding-right: 2rem;
   color: #fff;
 }
+
 .far {
   padding-left: 2rem;
   color: #fff;
 }
+
+//----Tablet----//
+
+@mobile: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 800px)";
+
+
+//---mobile-font-size---//
+@mobile-secondary-heading: 2.3rem;
+@mobile-paragraph: 1.6rem;
+
+//tablet-font-size//
+@tablet-secondary-heading: 2.5rem;
+@tablet-font: 1.7rem;

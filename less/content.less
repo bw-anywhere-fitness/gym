@@ -6,6 +6,10 @@
     height: 90rem;
     background: rgba(0, 0, 0, 0.5);
     position: relative;
+
+    @media @tablet {
+      height: 40rem;
+    }
   }
 
   &__secondaryHeading {
@@ -13,7 +17,13 @@
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 6.2rem;
+    font-size: 5.9rem;
+    text-align: center;
+
+    @media @tablet {
+      font-size: @tablet-secondary-heading;
+    }
+
   }
 
   &__btn {
@@ -21,6 +31,11 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+
+
+
+
   }
 }
 
@@ -30,11 +45,23 @@
   position: relative;
   padding-bottom: 100rem;
   height: 90rem;
+
+
+  @media @tablet {
+
+    padding-bottom: 3rem;
+  }
 }
 
 .heading {
   text-align: center;
   padding-top: 10rem;
+
+  @media @tablet {
+    padding-top: 1rem;
+  }
+
+
 }
 
 .class {
@@ -44,12 +71,24 @@
   justify-content: space-evenly;
   margin-top: 10rem;
 
+  @media @tablet {
+    margin-top: 1rem;
+
+  }
+
   &__item-1 {
     width: 30%;
     height: 30rem;
     padding-top: 3rem;
     position: relative;
+
+    // @media @tablet {
+    //   height: 10rem;
+    // }
+
   }
+
+
 
   &__img {
     background-size: cover;
@@ -57,6 +96,9 @@
     height: 100%;
     border-radius: 5px;
     object-fit: cover;
+
+    @media @tablet {}
+
   }
 
   &__item-title {
@@ -64,10 +106,20 @@
     padding: 1rem;
     bottom: -1rem;
     position: absolute;
-    width: 20rem;
+    width: 60%;
     left: 1rem;
     color: var(--color-secondary-light);
     font-size: 2.1rem;
+
+
+    @media @tablet {
+      font-size: 1.2rem;
+      padding: .3rem;
+    }
+
+
+
+
   }
 }
 
@@ -77,8 +129,14 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/scott-webb-22437-unsplash.jpg');
   height: 80rem;
   background-repeat: none;
-  background-size: cover;
+  background-size: 100%;
   position: relative;
+
+  @media @tablet {
+    height: 50rem;
+    margin-top: -17rem;
+  }
+
 }
 
 .places {
@@ -86,7 +144,15 @@
     opacity: 0.7;
     padding-top: 16rem;
     text-align: center;
+
+
+    @media @tablet {
+      padding-top: 7rem;
+    }
+
+
   }
+
 
   &__paragraph {
     color: var(--color-secondary);
@@ -94,6 +160,11 @@
     padding-top: 8rem;
     opacity: 0.7;
     text-align: center;
+
+
+    @media @tablet {
+      font-size: 2.6rem;
+    }
   }
 }
 
@@ -105,14 +176,157 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @media @tablet {
+    margin-top: 5rem;
+  }
+
   &__item {
     color: var(--color-secondary);
     font-size: 2.5rem;
     opacity: 0.7;
     line-height: 1.8;
     margin-left: 2rem;
+
+    @media @tablet {
+      font-size: @tablet-font;
+
+    }
   }
 }
+
+
+//--->About Learn<----//
+
+.learn {
+  background-image: url("../images/geert-pieters-688278-unsplash.jpg");
+  background-size: cover;
+  height: 80vh;
+
+
+  @media @tablet {
+    height: 50vh;
+
+  }
+
+
+}
+
+.contact {
+  background: rgba(0, 0, 0, .7);
+
+  position: relative;
+  background-size: cover;
+  height: 100%;
+
+
+  @media @tablet {
+    margin-top: -2rem;
+
+  }
+
+
+
+
+  &__content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+
+  }
+
+  &__secondary {
+    font-size: 8.8rem;
+    text-align: center;
+
+    @media @tablet {
+      font-size: @tablet-secondary-heading;
+
+    }
+  }
+
+
+  &__paragraph {
+    font-size: 2.8rem;
+    color: white;
+    margin-top: 4.5rem;
+    text-align: center;
+    line-height: 1.7;
+
+
+    @media @tablet {
+      font-size: @tablet-font;
+    }
+
+
+  }
+
+  &__btn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media @tablet {
+      top: 85%;
+    }
+
+
+  }
+
+
+}
+
+//---->About Employers<------//
+
+#employers {
+  background-image: linear-gradient(to top right, var(--color-secondary-light), var(--color-primary-dark));
+  padding: 10rem 0;
+}
+
+.secondary {
+  text-align: center;
+}
+
+.employee {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+  &__name-1 {
+    width: 30rem;
+    margin-right: 6rem;
+    text-align: center;
+    margin-top: 3rem;
+
+
+  }
+
+
+
+  &__img {
+    width: 30rem;
+    height: 30rem;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+
+
+
+  }
+
+  &__names {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+  }
+}
+
 
 //---->Footer<----//
 .footer {
