@@ -1,0 +1,18 @@
+.header {
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+  padding: 2.4rem 0;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__heading {
+  font-size: 5.3rem;
+}
+.header__list-item {
+  padding-left: 5rem;
+  text-decoration: none;
+  font-size: 2.8rem;
+  color: var(--color-secondary-light);
+}

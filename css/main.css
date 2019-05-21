@@ -139,6 +139,19 @@ body {
   line-height: 1.8;
   margin-left: 2rem;
 }
+.footer {
+  background: #1D2226;
+}
+.items {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.items__list {
+  color: #535658;
+  font-size: 1.9rem;
+  padding: 3rem 0;
+}
 .header {
   background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
 }

@@ -1,0 +1,26 @@
+:root {
+  --color-primary: #00afff;
+  --color-primary-dark: #29b6f6;
+  --color-primary-light: #3fbaf3;
+  --color-secondary: #fbb403;
+  --color-secondary-dark: #f8e224;
+  --color-secondary-light: #fee871;
+  --color-gray: #8a8c92;
+  --color-gray-dark: #b0b4c1;
+  --color-gray-light: #a0a9b6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+.container {
+  width: 150rem;
+  margin: auto;
+}
