@@ -6,14 +6,18 @@
     height: 90rem;
     background: rgba(0, 0, 0, 0.5);
     position: relative;
+    animation: all .2s;
+
+
+
+    @media @tablet-pro {
+      height: 70rem;
+    }
 
     @media @tablet {
       height: 40rem;
     }
 
-    @media @tablet-pro {
-      height: 70rem;
-    }
 
     @media @mobile {
       height: 30rem;
@@ -27,14 +31,23 @@
     transform: translate(-50%, -50%);
     font-size: 5.9rem;
     text-align: center;
+    animation-name: changeColor;
+    animation-duration: 1s;
+    transition: hover .9s;
+
+    &:hover {
+      border-bottom: 5px dotted var(--color-primary-dark);
+    }
+
+
+    @media @tablet-pro {
+      font-size: 3.8rem;
+    }
 
     @media @tablet {
       font-size: @tablet-secondary-heading;
     }
 
-    @media @tablet-pro {
-      font-size: 3.8rem;
-    }
 
     @media @mobile {
       font-size: 2rem;
@@ -47,12 +60,19 @@
 
   &__btn {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: none;
     cursor: pointer;
     outline: none;
+    animation-name: moveFromBottom;
+    animation-duration: 1s;
+
+    &:hover {
+      background-color: var(--color-secondary-dark);
+      font-weight: bold;
+    }
 
 
 
@@ -94,6 +114,17 @@
 
   .secondaryHeading {
     color: white;
+    animation-name: changeColorTwo;
+    animation-duration: .7s;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.3);
+      color: var(--color-secondary-light);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      display: inline-block;
+
+    }
   }
 
 }
@@ -121,6 +152,11 @@
     height: 30rem;
     padding-top: 3rem;
     position: relative;
+    transition: all .1s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
 
     @media @tablet {
@@ -133,7 +169,11 @@
       height: 15rem;
     }
 
+
+
   }
+
+
 
 
 
@@ -174,6 +214,10 @@
 
 
 
+  }
+
+  &:hover &__item-title {
+    color: red;
   }
 }
 
@@ -329,8 +373,17 @@
     font-size: 8.8rem;
     text-align: center;
 
+    &:hover {
+      transform: skewX(10deg) skewY(3deg);
+      background-image: radial-gradient(var(--color-primary-light), var(--color-secondary-dark));
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+
+
     @media @tablet {
       font-size: @tablet-secondary-heading;
+      margin-top: 7rem;
 
     }
 
@@ -368,6 +421,12 @@
     transform: translate(-50%, -50%);
     outline: none;
 
+    &:hover {
+      background: var(--color-secondary-light);
+      color: var(--color-primary);
+      font-weight: bold;
+    }
+
     @media @tablet {
       top: 85%;
     }
@@ -385,8 +444,7 @@
 //---->About Employers<------//
 
 #employers {
-  background-image: linear-gradient(to top right, var(--color-gray-dark), var(--color-gray-light));
-  padding: 10rem 0;
+  background-image: radial-gradient(var(--color-primary-light), var(--color-secondary-dark));
 
   @media @tablet {
     padding: 3rem 0;
@@ -398,7 +456,9 @@
 
 .secondary {
   text-align: center;
-  color: #fff;
+  color: black;
+  padding-top: 3rem;
+
 }
 
 .employee {
@@ -482,6 +542,11 @@
     color: #fff;
     font-size: 1.9rem;
     padding: 3rem 0;
+
+    @media @tablet {
+      font-size: @tablet-font;
+      padding: 1rem 0;
+    }
 
 
     @media @mobile {

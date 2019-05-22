@@ -20,6 +20,10 @@ html {
 body {
   font-family: 'Oxygen', sans-serif;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 .container {
   width: 100%;
   margin: auto;
@@ -55,6 +59,7 @@ body {
   color: var(--color-secondary);
   font-size: 5.2rem;
   opacity: 0.8;
+  animation: moveUp 0.8s;
 }
 @media (max-width: 800px) {
   .secondaryHeading {
@@ -74,6 +79,75 @@ body {
   padding-left: 2rem;
   color: #fff;
 }
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-12rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(12rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    background-color: white;
+  }
+  100% {
+    opacity: 1;
+    background-color: var(--color-secondary-light);
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: var(--color-primary-dark);
+  }
+  40% {
+    color: var(--color-primary-light);
+  }
+  70% {
+    color: var(--color-secondary-light);
+  }
+  100% {
+    color: var(--color-secondary-dark);
+  }
+}
+@keyframes changeColorTwo {
+  0% {
+    color: black;
+  }
+  30% {
+    color: var(--color-primary-dark);
+  }
+  50% {
+    color: var(--color-primary-light);
+  }
+  70% {
+    color: var(--color-secondary-dark);
+  }
+  100% {
+    color: var(--color-secondary-light);
+  }
+}
 .top-content {
   background-image: url('../images/header.jpg');
   background-size: cover;
@@ -82,15 +156,16 @@ body {
   height: 90rem;
   background: rgba(0, 0, 0, 0.5);
   position: relative;
-}
-@media (max-width: 800px) {
-  .top-content__first {
-    height: 40rem;
-  }
+  animation: all 0.2s;
 }
 @media (max-width: 1000px) {
   .top-content__first {
     height: 70rem;
+  }
+}
+@media (max-width: 800px) {
+  .top-content__first {
+    height: 40rem;
   }
 }
 @media (max-width: 500px) {
@@ -105,15 +180,21 @@ body {
   transform: translate(-50%, -50%);
   font-size: 5.9rem;
   text-align: center;
+  animation-name: changeColor;
+  animation-duration: 1s;
+  transition: hover 0.9s;
 }
-@media (max-width: 800px) {
-  .top-content__secondaryHeading {
-    font-size: 2rem;
-  }
+.top-content__secondaryHeading:hover {
+  border-bottom: 5px dotted var(--color-primary-dark);
 }
 @media (max-width: 1000px) {
   .top-content__secondaryHeading {
     font-size: 3.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .top-content__secondaryHeading {
+    font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -123,12 +204,18 @@ body {
 }
 .top-content__btn {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: none;
   cursor: pointer;
   outline: none;
+  animation-name: moveFromBottom;
+  animation-duration: 1s;
+}
+.top-content__btn:hover {
+  background-color: var(--color-secondary-dark);
+  font-weight: bold;
 }
 @media (max-width: 500px) {
   .top-content__btn {
@@ -161,6 +248,15 @@ body {
 }
 .heading .secondaryHeading {
   color: white;
+  animation-name: changeColorTwo;
+  animation-duration: 0.7s;
+  transition: all 1s;
+}
+.heading .secondaryHeading:hover {
+  transform: scale(1.3);
+  color: var(--color-secondary-light);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  display: inline-block;
 }
 .class {
   display: flex;
@@ -184,6 +280,10 @@ body {
   height: 30rem;
   padding-top: 3rem;
   position: relative;
+  transition: all 0.1s;
+}
+.class__item-1:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 800px) {
   .class__item-1 {
@@ -225,6 +325,9 @@ body {
     font-size: 1rem;
     padding: 0.1rem;
   }
+}
+.class:hover .class__item-title {
+  color: red;
 }
 #places {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/scott-webb-22437-unsplash.jpg');
@@ -345,9 +448,16 @@ body {
   font-size: 8.8rem;
   text-align: center;
 }
+.contact__secondary:hover {
+  transform: skewX(10deg) skewY(3deg);
+  background-image: radial-gradient(var(--color-primary-light), var(--color-secondary-dark));
+  color: transparent;
+  -webkit-background-clip: text;
+}
 @media (max-width: 800px) {
   .contact__secondary {
     font-size: 2rem;
+    margin-top: 7rem;
   }
 }
 @media (max-width: 500px) {
@@ -380,6 +490,11 @@ body {
   transform: translate(-50%, -50%);
   outline: none;
 }
+.contact__btn:hover {
+  background: var(--color-secondary-light);
+  color: var(--color-primary);
+  font-weight: bold;
+}
 @media (max-width: 800px) {
   .contact__btn {
     top: 85%;
@@ -391,8 +506,7 @@ body {
   }
 }
 #employers {
-  background-image: linear-gradient(to top right, var(--color-gray-dark), var(--color-gray-light));
-  padding: 10rem 0;
+  background-image: radial-gradient(var(--color-primary-light), var(--color-secondary-dark));
 }
 @media (max-width: 800px) {
   #employers {
@@ -401,7 +515,8 @@ body {
 }
 .secondary {
   text-align: center;
-  color: #fff;
+  color: black;
+  padding-top: 3rem;
 }
 .employee {
   margin-top: 4rem;
@@ -469,6 +584,12 @@ body {
   font-size: 1.9rem;
   padding: 3rem 0;
 }
+@media (max-width: 800px) {
+  .items__list {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+  }
+}
 @media (max-width: 500px) {
   .items__list {
     font-size: 1rem;
@@ -484,11 +605,21 @@ body {
 }
 @media (max-width: 500px) {
   .header {
-    padding: 0;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    padding: 1rem;
   }
 }
 .header__logo {
   flex: 3;
+  animation-name: moveFromLeft;
+  animation-duration: 1s;
+  background-image: radial-gradient(var(--color-primary-light), var(--color-secondary-dark));
+  color: transparent;
+  -webkit-background-clip: text;
 }
 @media (max-width: 800px) {
   .header__logo {
@@ -502,7 +633,6 @@ body {
 }
 .header__heading {
   font-size: 4.3rem;
-  color: white;
 }
 @media (max-width: 800px) {
   .header__heading {
@@ -523,6 +653,10 @@ body {
   .header__heading {
     font-size: 1.9rem;
   }
+}
+.header__list {
+  animation-name: moveFromRight;
+  animation-duration: 1s;
 }
 .header__list-item {
   text-decoration: none;

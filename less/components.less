@@ -25,6 +25,8 @@
   color: var(--color-secondary);
   font-size: 5.2rem;
   opacity: 0.8;
+  animation: moveUp .8s;
+
 
   @media @tablet {
     font-size: @tablet-secondary-heading;
@@ -68,3 +70,107 @@
 
 
 ////KeyFrames 
+
+@keyframes moveFromLeft {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-12rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes moveFromRight {
+
+  0% {
+    opacity: 0;
+    transform: translateX(12rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes moveFromBottom {
+
+  0% {
+    opacity: 0;
+    background-color: white;
+
+  }
+
+
+  100% {
+    opacity: 1;
+    background-color: var(--color-secondary-light)
+  }
+}
+
+
+@keyframes changeColor {
+
+  0% {
+    color: var(--color-primary-dark);
+
+  }
+
+  40% {
+    color: var(--color-primary-light);
+
+  }
+
+
+  70% {
+    color: var(--color-secondary-light);
+
+  }
+
+  100% {
+    color: var(--color-secondary-dark)
+  }
+}
+
+
+@keyframes changeColorTwo {
+
+  0% {
+    color: black;
+
+  }
+
+  30% {
+    color: var(--color-primary-dark);
+
+  }
+
+
+  50% {
+    color: var(--color-primary-light)
+  }
+
+  70% {
+    color: var(--color-secondary-dark)
+  }
+
+  100% {
+    color: var(--color-secondary-light)
+  }
+}
