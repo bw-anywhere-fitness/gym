@@ -6,6 +6,9 @@
   z-index: 3;
 
 
+  @media @tablet {
+    padding: 1rem;
+  }
 
 
   @media @mobile {
@@ -13,8 +16,10 @@
   }
 
 
-  @media @tablet {
-    padding: 1rem;
+
+
+  @media @mobile-small {
+    padding: 0;
   }
 
 
@@ -30,9 +35,10 @@
     -webkit-background-clip: text;
 
 
-    @media @tablet {
-      font-size: @tablet-secondary-heading;
-    }
+    // @media @tablet {
+    //   font-size: @tablet-secondary-heading;
+    // }
+
 
 
   }
@@ -64,6 +70,11 @@
     @media @mobile-large {
       font-size: 1.9rem;
     }
+
+    @media @mobile-small {
+      font-size: .6rem;
+    }
+
 
   }
 
@@ -99,6 +110,11 @@
       font-size: @mobile-font;
       padding: .8rem 2rem;
 
+    }
+
+    @media @mobile-small {
+      font-size: .3rem;
+      padding: .6rem;
     }
 
 
