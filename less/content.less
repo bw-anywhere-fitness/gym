@@ -11,6 +11,10 @@
       height: 40rem;
     }
 
+    @media @tablet-pro {
+      height: 70rem;
+    }
+
     @media @mobile {
       height: 30rem;
     }
@@ -28,6 +32,17 @@
       font-size: @tablet-secondary-heading;
     }
 
+    @media @tablet-pro {
+      font-size: 3.8rem;
+    }
+
+    @media @mobile {
+      font-size: 2rem;
+    }
+
+
+
+
   }
 
   &__btn {
@@ -35,6 +50,12 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+
+
 
     @media @mobile {
       top: 70%;
@@ -84,6 +105,7 @@
   justify-content: space-evenly;
   margin-top: 10rem;
 
+
   @media @tablet {
     margin-top: 1rem;
 
@@ -95,14 +117,22 @@
   }
 
   &__item-1 {
-    width: 40%;
+    width: 30%;
     height: 30rem;
     padding-top: 3rem;
     position: relative;
 
+
+    @media @tablet {
+      width: 40%;
+      height: 20rem;
+    }
+
     @media @mobile {
+      width: 40%;
       height: 15rem;
     }
+
   }
 
 
@@ -151,9 +181,9 @@
 
 #places {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/scott-webb-22437-unsplash.jpg');
-  height: 80rem;
+  height: 70rem;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
 
   @media @tablet {
@@ -336,6 +366,7 @@
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
+    outline: none;
 
     @media @tablet {
       top: 85%;
@@ -383,6 +414,8 @@
 
   @media @mobile {
     justify-content: none;
+    margin-top: 2rem;
+
   }
 
 
@@ -395,8 +428,8 @@
 
     @media @mobile {
       justify-content: space-around;
-      width: 10%;
-      margin-right: none;
+      width: 13%;
+      margin-right: 0;
       height: 3%;
     }
 
@@ -435,6 +468,8 @@
 //---->Footer<----//
 .footer {
   background: #1D2226;
+
+  @media @tablet-pro {}
 
 }
 
