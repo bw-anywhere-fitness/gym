@@ -473,7 +473,7 @@ a {
   transform: translate(-50%, -50%);
 }
 .contact__secondary {
-  font-size: 8.8rem;
+  font-size: 5.6rem;
   text-align: center;
 }
 .contact__secondary:hover {
@@ -494,7 +494,7 @@ a {
   }
 }
 .contact__paragraph {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: white;
   margin-top: 4.5rem;
   text-align: center;
@@ -625,7 +625,7 @@ a {
   }
 }
 .header {
-  background: rgba(29, 34, 38, 0.76);
+  background: #1d2226;
   padding: 2rem 0;
   position: fixed;
   width: 100%;
