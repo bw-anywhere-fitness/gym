@@ -232,10 +232,6 @@
 
 
   }
-
-  &:hover &__item-title {
-    color: red;
-  }
 }
 
 //---Places---///
@@ -361,7 +357,8 @@
 .learn {
   background-image: url("../images/geert-pieters-688278-unsplash.jpg");
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
+
 
 
   @media @tablet {
@@ -436,7 +433,7 @@
 
 
   &__paragraph {
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: white;
     margin-top: 4.5rem;
     text-align: center;
@@ -457,7 +454,7 @@
 
   &__btn {
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     outline: none;
@@ -491,6 +488,12 @@
     padding: 3rem 0;
   }
 
+  padding: 10rem;
+
+  height: 100vh;
+
+  width: 100%;
+
 }
 
 
@@ -503,11 +506,12 @@
 }
 
 .employee {
-  margin-top: 4rem;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  padding: 5rem 0;
 
   @media @tablet {
     margin-top: 1rem;
@@ -520,11 +524,21 @@
   }
 
 
-  &__name-1 {
+  &__card {
     width: 13%;
     margin-right: 6rem;
-    text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    transition: all .3s;
+
+
+    &:hover {
+      transform: translateY(-.5rem) scale(1.1);
+
+    }
+
+
+
+
     height: 15%;
 
     @media @mobile {
@@ -542,7 +556,7 @@
     width: 100%;
     background-size: cover;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 4px;
 
 
 
@@ -550,8 +564,9 @@
   }
 
   &__names {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     margin-top: 2rem;
+    text-align: center;
 
 
     @media @tablet {
@@ -564,6 +579,7 @@
 
   }
 }
+
 
 
 //---->Footer<----//

@@ -8,8 +8,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400&display=swap" rel="stylesheet">
 
-
   <link rel="stylesheet" href="css/main.css" />
+
+  <script src="tabs.js" defer></script>
+
   <title>Document</title>
 </head>
 
@@ -19,20 +21,19 @@
     <div class="container">
       <nav class="header__nav">
         <div class="header__logo">
-          <!-- <h1 class="header__heading">
-            <span class="header__heading-one">Anywhere</span>
-            <span class="header__heading-two">Fitness</span></h1> -->
-            <h1 class="header__heading">Anywhere Fitness</h1>
+        
+          <h1 class="header__heading">Anywhere Fitness</h1>
         </div>
-        <div class="header__list"><a class="header__list-item" href="index.html">Home</a><a class="header__list-item"
-            href="about.html">About Us</a><a class="header__list-item" href="https://dazzling-shirley-a228b1.netlify.com">Sign In</a></div>
+        <div class="header__list "><a class="header__list-item" href="index.html">Home</a><a class="header__list-item"
+            href="about.html">About Us</a><a class="header__list-item  header__sign-in"
+            href="https://dazzling-shirley-a228b1.netlify.com">Sign In</a></div>
       </nav>
     </div>
   </div>
   <!--End of Header-->
 
 
- <!--Starting of Learn-->
+  <!--Starting of Learn-->
   <div class="learn">
     <div class="container"></div>
     <div class="contact">
@@ -51,45 +52,77 @@
       <div class="container">
 
 
+
         <h2 class="secondary secondaryHeading">Employee Names</h2>
 
-      
-           <div class="employee">
-          <div class="employee__name-1">
-            <img src="images/steve-halama-1361786-unsplash.jpg" alt="employee" class="employee__img">
-            <h4 class='employee__names'>Name</h4>
+        <div class="tabs">
+
+            <div data-tab="all" class="tab active-tab">All</div>
+            <div data-tab="teamLead" class="tab active-tab">Team Lead</div>
+            <div data-tab="ux-designer" class="tab active-tab">UX-Designer</div>
+            <div data-tab="ios" class="tab active-tab">IOS</div>
+            <div data-tab="web-ui" class="tab active-tab">Web-UI</div>
+            <div data-tab="front-end" class="tab active-tab">Front-End</div>
+            <div data-tab="back-end" class="tab active-tab">Back-End</div>
+
+        </div>
+
+        <div class="employee">
+          <div class="employee__card" data-tab="teamLead">
+            <img src="images/Lead.jpeg" alt="employee" class="employee__img">
+            <h4 class='employee__names'>Carlo Clamucha</h4>
           </div>
-          <div class="employee__name-1">
-            <img src="images/steve-halama-1361786-unsplash.jpg" alt="employee" class="employee__img">
-            <h4 class='employee__names'>Name</h4>
+          <div class="employee__card" data-tab="ux-designer">
+            <img src="images/ux.png" alt="employee" class="employee__img">
+            <h4 class='employee__names'>Alexander Vargas</h4>
           </div>
-          <div class="employee__name-1">
-            <img src="images/steve-halama-1361786-unsplash.jpg" alt="employee" class="employee__img">
-            <h4 class='employee__names'>Name</h4>
+          <div class="employee__card" data-tab="ios">
+            <img src="images/ios.jpeg" alt="employee" class="employee__img">
+            <h4 class='employee__names'>Michael R. FLowers</h4>
           </div>
-          <div class="employee__name-1">
-              <img src="images/steve-halama-1361786-unsplash.jpg" alt="employee" class="employee__img">
-              <h4 class='employee__names'>Name</h4>   
+          <div class="employee__card" data-tab="web-ui">
+            <img src="images/James.jpeg" alt="employee" class="employee__img">
+            <h4 class='employee__names'>James Eneh</h4>
+          </div>
+          <div class="employee__card" data-tab="web-ui">
+              <img src="images/ui.jpeg" alt="employee" class="employee__img">
+              <h4 class='employee__names'>Cassandra Springer</h4>
             </div>
-            
+            <div class="employee__card" data-tab="web-ui">
+                <img src="images/mee.png" alt="employee" class="employee__img">
+                <h4 class='employee__names'>Sunil Karki</h4>
+              </div>
+          <div class="employee__card" data-tab="front-end">
+              <img src="images/front-end.jpeg" alt="employee" class="employee__img">
+              <h4 class='employee__names'>Jonathan Erlich</h4>
+            </div>
+            <div class="employee__card" data-tab="front-end">
+                <img src="images/front-end.png" alt="employee" class="employee__img">
+                <h4 class='employee__names'>Tim Ronney</h4>
+              </div>
+            <div class="employee__card" data-tab="back-end">
+                <img src="images/backend.png" alt="employee" class="employee__img">
+                <h4 class='employee__names'>Rodean Fraser</h4>
+              </div>
+
         </div>
       </div>
     </section>
     <!--End of Employers-->
 
-  <!--Footer-->
-  <footer class="footer">
-    <div class="container">
-      <ul class="items">
-        <li class="items__list">Courses</li>
-        <li class="items__list">Location</li>
-        <li class="items__list">Blog</li>
-        <li class="items__list">Referral</li>
-        <li class="items__list">Contact</li>
-      </ul>
-    </div>
-  </footer>
-  <!--End of Footer-->
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
+        <ul class="items">
+          <li class="items__list">Courses</li>
+          <li class="items__list">Location</li>
+          <li class="items__list">Blog</li>
+          <li class="items__list">Referral</li>
+          <li class="items__list">Contact</li>
+        </ul>
+      </div>
+    </footer>
+    <!--End of Footer-->
 
 </body>
 
