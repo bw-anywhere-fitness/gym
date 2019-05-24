@@ -178,7 +178,9 @@
       height: 15rem;
     }
 
-
+    &:hover &__item-title {
+      color: red;
+    }
 
 
   }
@@ -297,7 +299,7 @@
     @media @mobile {
       font-size: @mobile-font;
       padding-top: 2rem;
-      padding-left: 3rem;
+
 
 
     }
@@ -346,6 +348,7 @@
     @media @mobile {
       font-size: @mobile-font;
       line-height: none;
+      padding-left: 10rem;
 
     }
   }
@@ -529,6 +532,9 @@
     margin-right: 6rem;
     margin-top: 4rem;
     transition: all .3s;
+    padding-left: 2rem;
+    justify-content: baseline;
+
 
 
     &:hover {
@@ -538,16 +544,30 @@
 
 
 
+    @media @tablet {
+      justify-content: space-around;
+      width: 23%;
+      margin-right: 0;
+      height: 100%;
 
-    height: 15%;
+    }
 
     @media @mobile {
       justify-content: space-around;
-      width: 13%;
+      width: 40%;
       margin-right: 0;
-      height: 3%;
+      height: 100%;
+      display: none;
+
     }
 
+    @media @mobile-small {
+      justify-content: space-around;
+      width: 30%;
+      margin-right: 0;
+
+
+    }
   }
 
 
@@ -588,12 +608,14 @@
 
   @media @tablet-pro {}
 
+
 }
 
 .items {
   list-style: none;
   display: flex;
   justify-content: space-around;
+
 
   &__list {
     color: #fff;
@@ -609,6 +631,8 @@
     @media @mobile {
       font-size: @mobile-font;
       padding: 1rem 0;
+
+
     }
   }
 

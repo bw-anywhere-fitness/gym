@@ -48,6 +48,7 @@ a {
   margin-left: 2rem;
   font-size: 1.7rem;
   border-radius: 5px;
+  margin-top: 1rem;
 }
 .tabs .active-tab {
   background-color: var(--color-primary-light);
@@ -315,13 +316,16 @@ a {
     height: 15rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   .class__item-1 {
     width: 100%;
     height: 15rem;
   }
 }
-@media (max-width: 370px) {
+.class__item-1:hover .class__item-1__item-title {
+  color: red;
+}
+@media (max-width: 380px) {
   .class__hide {
     display: none;
   }
@@ -372,7 +376,7 @@ a {
     height: 30rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   #places {
     display: none;
   }
@@ -408,10 +412,9 @@ a {
   .places__paragraph {
     font-size: 1rem;
     padding-top: 2rem;
-    padding-left: 3rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   .places__paragraph {
     display: none;
   }
@@ -453,6 +456,7 @@ a {
   .update__item {
     font-size: 1rem;
     line-height: none;
+    padding-left: 10rem;
   }
 }
 .learn {
@@ -587,17 +591,34 @@ a {
   margin-right: 6rem;
   margin-top: 4rem;
   transition: all 0.3s;
-  height: 15%;
+  padding-left: 2rem;
+  justify-content: baseline;
 }
 .employee__card:hover {
   transform: translateY(-0.5rem) scale(1.1);
 }
+@media (max-width: 800px) {
+  .employee__card {
+    justify-content: space-around;
+    width: 23%;
+    margin-right: 0;
+    height: 100%;
+  }
+}
 @media (max-width: 500px) {
   .employee__card {
     justify-content: space-around;
-    width: 13%;
+    width: 40%;
     margin-right: 0;
-    height: 3%;
+    height: 100%;
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .employee__card {
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 0;
   }
 }
 .employee__img {
@@ -663,7 +684,7 @@ a {
     padding: 0.5rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   .header {
     padding: 0;
   }
@@ -694,7 +715,7 @@ a {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   .header__heading {
     font-size: 1.5rem;
   }
@@ -704,7 +725,7 @@ a {
     font-size: 1.9rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   .header__heading {
     font-size: 0.6rem;
   }
@@ -738,7 +759,7 @@ a {
     padding: 0.8rem 2rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 380px) {
   .header__list-item {
     font-size: 0.3rem;
     padding: 0.6rem;

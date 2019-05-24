@@ -11,6 +11,7 @@
   margin-left: 2rem;
   font-size: 1.7rem;
   border-radius: 5px;
+  margin-top: 1rem;
 }
 .tabs .active-tab {
   background-color: var(--color-primary-light);
